@@ -171,6 +171,7 @@ batch_size = 128
 
 **Data Gernerator 이미지 증강**
 ```
+# 데이터 증강
 train =ImageDataGenerator(horizontal_flip=True, vertical_flip=True,
                           validation_split=0.1,  # 훈련 데이터와 검증 데이터를 90:10 로 나눔
                           rescale=1./255,        # 정규화
@@ -179,6 +180,30 @@ train =ImageDataGenerator(horizontal_flip=True, vertical_flip=True,
                          height_shift_range = 0.1,)
 
 test=ImageDataGenerator(rescale=1./255,validation_split=0.1)
+```
+<br>
+
+**target_size 설정**
+```
+# target_size = 224,224 로 설정
+
+train_gen=train.flow_from_directory(data_path,target_size=(224,224),batch_size=batch_size,class_mode='categorical',subset='training')
+
+test_gen=test.flow_from_directory(data_path,target_size=(224,224),batch_size=batch_size,class_mode='categorical',subset='validation')
+```
+<br>
+
+**라벨 설정**
+```
+labels = (train_gen.class_indices)
+labels = dict((v,k) for k,v in labels.items())
+print(labels)
+```
+<br>
+
+**11개의 클래스** 
+```
+num_classes = 11
 ```
 <br>
 
