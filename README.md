@@ -104,6 +104,33 @@ shutil.unpack_archive(source_filename, extract_folder)
 ```
   <br>
 
+```
+import os
+import matplotlib.pyplot as plt
+
+
+def plot_imags(item_dir, top = 10):
+  all_trash_dirs = os.listdir(item_dir)
+  item_files = [os.path.join(item_dir, file) for file in all_trash_dirs][:5]
+
+  plt.figure(figsize = (10,10))
+
+  for idx, image_path in enumerate(item_files):
+    sp = plt.subplot(5,5, idx+1)
+
+    img = plt.imread(image_path)
+    plt.tight_layout()
+    sp.axis('Off')
+    plt.imshow(img, cmap = 'gray')
+```
+
+```
+plot_imags(data_path + '/battery')
+plot_imags(data_path + '/biological')
+plot_imags(data_path + '/brown-glass')
+```
+
+
 
 * 테스트 방법
   <br>
