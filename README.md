@@ -47,7 +47,8 @@ battery, biological, brown-glass, cardboard, clothes, green-glass, metal, paper,
 
 
 #### Development
- <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white"> 
+<img src="https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=Keras&logoColor=white"> <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white"> 
+ 
 <br>
   
 ## Prerequisite
