@@ -42,7 +42,16 @@
 <br>
 
 ## 사용법
-* 설치방법
+* zip 이미지 파일 압축 해제 방법
+'''drive_path = '/content/drive/MyDrive/Colab Notebooks/project/'
+source_filename = drive_path + 'dataset/archive (5).zip'
+
+extract_folder = '/content/drive/MyDrive/Colab Notebooks/project/dataset/''''
+
+'''import shutil
+shutil.unpack_archive(source_filename, extract_folder)'''
+
+
 * 테스트 방법
   <br>
 
