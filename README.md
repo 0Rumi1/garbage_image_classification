@@ -172,8 +172,8 @@ fun_model = tf.keras.Model(inputs=input_layer, outputs=x10, name='FunctionalMode
 ## 이후의 계획
 <br>
 1. 클래스 단순화 => 모델 학습 시간 단축
-2. 모델 성능 개선에 대한 방법 서치
-3. 
+2. 모델 성능 개선에 대한 방법 공부
+3. 모델 테스트 및 웹 구현
 
 
 
