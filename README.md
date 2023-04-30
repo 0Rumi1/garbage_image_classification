@@ -74,14 +74,14 @@ garbage_classification
 <br>
   
 ## Prerequisite
-import tensorflow as tf
-import tensorflow_datasets as td
-from tensorflow.keras.preprocessing.image import ImageDataGenerator
-import numpy as np
-import matplotlib.pylab as plt
-from keras.engine import input_layer
-from tensorflow.keras.utils import plot_model
-import matplotlib.pyplot as plt
+import tensorflow as tf   
+import tensorflow_datasets as td   
+from tensorflow.keras.preprocessing.image import ImageDataGenerator   
+import numpy as np   
+import matplotlib.pylab as plt   
+from keras.engine import input_layer   
+from tensorflow.keras.utils import plot_model   
+import matplotlib.pyplot as plt   
 
 
 
