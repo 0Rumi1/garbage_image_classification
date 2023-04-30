@@ -21,6 +21,7 @@
 ## 기술 스택
 #### Environment
 <img src="https://img.shields.io/badge/visualstudiocode-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white"/>
+<img src="https://img.shields.io/badge/window-CC6699?style=for-the-badge&logo=window&logoColor=white"/>
 
 
 윈도우, vscode
