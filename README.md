@@ -31,7 +31,7 @@
 
 ## 데이터 구조
 
-* [데이터 파일 경로](https://www.kaggle.com/datasets/mostafaabla/garbage-classification)
+* [데이터 출처](https://www.kaggle.com/datasets/mostafaabla/garbage-classification) : 캐글 
 
 * 라벨: 12개
 * 실제 사용 라벨은 11개 (plastic 제외) 제외 이유는 학습 시, **'plastic 라벨의 이미지 파일이 존재하지 않는다'** 오류 발생   
