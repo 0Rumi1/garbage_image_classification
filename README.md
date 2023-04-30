@@ -71,7 +71,20 @@ garbage_classification
 
 #### Development
  <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white"> 
-  <br>
+<br>
+  
+## Prerequisite
+import tensorflow as tf
+import tensorflow_datasets as td
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+import numpy as np
+import matplotlib.pylab as plt
+from keras.engine import input_layer
+from tensorflow.keras.utils import plot_model
+import matplotlib.pyplot as plt
+
+
+
 
 ---
 <br>
