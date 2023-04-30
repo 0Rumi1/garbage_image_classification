@@ -35,8 +35,8 @@
 * **1) 모델 학습 시간이 오래 소요되는 점**, **2)오류 해결에 어려움** 으로 해당 파일은 삭제하여 진행하는 것으로 결정함
 
 
-garbage_classification
-(battery, biological, brown-glass, cardboard, clothes, green-glass, metal, paper, plastic, shoes, trash, white-glass)
+* garbage_classification
+battery, biological, brown-glass, cardboard, clothes, green-glass, metal, paper, plastic, shoes, trash, white-glass
 
 <br>
 
