@@ -74,6 +74,8 @@ garbage_classification
 <br>
   
 ## Prerequisite
+
+import shutil   
 import tensorflow as tf   
 import tensorflow_datasets as td   
 from tensorflow.keras.preprocessing.image import ImageDataGenerator   
@@ -129,94 +131,6 @@ extract_folder = '/content/drive/MyDrive/Colab Notebooks/project/dataset/'
 ```
 import shutil
 shutil.unpack_archive(source_filename, extract_folder)
-```
-<br>
-
-**폴더 이름 나열**
-```
-print(os.listdir('/content/drive/MyDrive/Colab Notebooks/project/dataset/garbage_classification'))
-```
-<br>
-
-**폴더의 이미지 데이터 경로**
-```
-data_path = '/content/drive/MyDrive/Colab Notebooks/project/dataset/garbage_classification'
-```
-<br>
-
-**이미지 데이터 확인**
-```
-import os
-import matplotlib.pyplot as plt
-
-
-def plot_imags(item_dir, top = 10):
-  all_trash_dirs = os.listdir(item_dir)
-  item_files = [os.path.join(item_dir, file) for file in all_trash_dirs][:5]
-
-  plt.figure(figsize = (10,10))
-
-  for idx, image_path in enumerate(item_files):
-    sp = plt.subplot(5,5, idx+1)
-
-    img = plt.imread(image_path)
-    plt.tight_layout()
-    sp.axis('Off')
-    plt.imshow(img, cmap = 'gray')
-```
-
-```
-# 데이터 확인
-plot_imags(data_path + '/battery')
-plot_imags(data_path + '/biological')
-plot_imags(data_path + '/brown-glass')
-```
-<br>
-
-**Data Generator 를 통한 Train, Test 데이터 분류**
-
-```
-# 이미지 수: 총 1만 5천장
-batch_size = 128
-```
-<br>
-
-
-**Data Gernerator 이미지 증강**
-```
-# 데이터 증강
-train =ImageDataGenerator(horizontal_flip=True, vertical_flip=True,
-                          validation_split=0.1,  # 훈련 데이터와 검증 데이터를 90:10 로 나눔
-                          rescale=1./255,        # 정규화
-                          rotation_range= 30,    # 이미지 30도 회전
-                         width_shift_range = 0.1,
-                         height_shift_range = 0.1,)
-
-test=ImageDataGenerator(rescale=1./255,validation_split=0.1)
-```
-<br>
-
-**target_size 설정**
-```
-# target_size = 224,224 로 설정
-
-train_gen=train.flow_from_directory(data_path,target_size=(224,224),batch_size=batch_size,class_mode='categorical',subset='training')
-
-test_gen=test.flow_from_directory(data_path,target_size=(224,224),batch_size=batch_size,class_mode='categorical',subset='validation')
-```
-<br>
-
-**라벨 설정**
-```
-labels = (train_gen.class_indices)
-labels = dict((v,k) for k,v in labels.items())
-print(labels)
-```
-<br>
-
-**11개의 클래스** 
-```
-num_classes = 11
 ```
 <br>
 
