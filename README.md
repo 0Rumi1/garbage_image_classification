@@ -238,9 +238,8 @@ fun_model = tf.keras.Model(inputs=input_layer, outputs=x10, name='FunctionalMode
 ![image](https://user-images.githubusercontent.com/122415320/235335209-b12f9abe-8fc1-45cb-8ba2-e818aefc01c5.png)
 
 3-2) Train/Test 모델 손실 및 정확도 그래프
-* 과대적합이나 과소적합이 거의 발생하지 않고 학습이 잘 진행된 것을 확인할 수 있음
-![image](https://user-images.githubusercontent.com/122415320/235335200-0b291aec-0bc4-418b-acf3-0d2668fd2c7a.png)
-  <br>
+*과대적합이나 과소적합이 거의 발생하지 않고 학습이 잘 진행된 것을 확인할 수 있음
+![그래프](https://user-images.githubusercontent.com/122415320/235342956-e6048d32-58a0-4d14-be72-4f6e91dc242f.jpg)
 
 
 ## 배운점 & 아쉬운 점
