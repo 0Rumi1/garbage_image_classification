@@ -21,10 +21,8 @@
 ## 기술 스택
 #### Environment
 <img src="https://img.shields.io/badge/visualstudiocode-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white"/>
-<img src="https://img.shields.io/badge/windows-0078D6?style=for-the-badge&logo=window&logoColor=white"/>
+<img src="https://img.shields.io/badge/windows-0078D6?style=for-the-badge&logo=windows&logoColor=white"/>
 
-
-윈도우, vscode
 
 #### Development
  <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white"> 
