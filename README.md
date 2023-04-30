@@ -95,6 +95,7 @@ garbage_classification
 from google.colab import drive
 drive.mount("/content/drive") # 
 ```
+<br>
 
 **이미지 zip 파일 압축 해제**
 압축 파일의 위치(구글 드라이브 - 내 드라이브 위치)
@@ -117,7 +118,19 @@ shutil.unpack_archive(source_filename, extract_folder)
 ```
 <br>
 
-**이미지 확인**
+**폴더 이름 나열**
+```
+print(os.listdir('/content/drive/MyDrive/Colab Notebooks/project/dataset/garbage_classification'))
+```
+<br>
+
+**폴더의 이미지 데이터 경로**
+```
+data_path = '/content/drive/MyDrive/Colab Notebooks/project/dataset/garbage_classification'
+```
+<br>
+
+**이미지 데이터 확인**
 ```
 import os
 import matplotlib.pyplot as plt
@@ -139,11 +152,36 @@ def plot_imags(item_dir, top = 10):
 ```
 
 ```
+# 데이터 확인
 plot_imags(data_path + '/battery')
 plot_imags(data_path + '/biological')
 plot_imags(data_path + '/brown-glass')
 ```
 <br>
+
+**Data Generator 를 통한 Train, Test 데이터 분류**
+
+```
+# 이미지 수: 총 1만 5천장
+batch_size = 128
+```
+<br>
+
+
+**Data Gernerator 이미지 증강**
+```
+train =ImageDataGenerator(horizontal_flip=True, vertical_flip=True,
+                          validation_split=0.1,  # 훈련 데이터와 검증 데이터를 90:10 로 나눔
+                          rescale=1./255,        # 정규화
+                          rotation_range= 30,    # 이미지 30도 회전
+                         width_shift_range = 0.1,
+                         height_shift_range = 0.1,)
+
+test=ImageDataGenerator(rescale=1./255,validation_split=0.1)
+```
+<br>
+
+
 
 ## 결과
 3-1) 모델 정확도 67.9% 로 아쉬운 결과를 나타냄
