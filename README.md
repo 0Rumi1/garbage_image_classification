@@ -28,6 +28,33 @@
 * 모델 성능 확인
 * 결론
 
+## 데이터 구조
+imagedata
+
+ └ battery
+
+ └ biological
+
+ └ brown-glass
+
+ └ cardboard
+
+ └ clothes
+
+ └ green-glass
+
+ └ metal
+
+ └ paper
+ 
+ └ plastic
+ 
+ └ shoes
+ 
+ └ trash
+ 
+ └ white-glass
+
 ## 기술 스택
 #### Environment
 <img src="https://img.shields.io/badge/visualstudiocode-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white"/>
