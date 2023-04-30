@@ -88,9 +88,17 @@ garbage_classification
 <br>
 
 ## 사용법
+
+**구글 드라이브 마운트**
+아래 코드 실행 시, 구글 드라이브에 마운트해 드라이브 파일을 업로드 혹은 다운로드받을 수 있음
+```
+from google.colab import drive
+drive.mount("/content/drive") # 
+```
+
 **이미지 zip 파일 압축 해제**
 압축 파일의 위치(구글 드라이브 - 내 드라이브 위치)
-``` python
+``` 
 drive_path = '/content/drive/MyDrive/Colab Notebooks/project/'
 source_filename = drive_path + 'dataset/archive (5).zip'
 ```
