@@ -28,8 +28,6 @@
  <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white"> 
   <br>
 
-#### Communication
-
 
 ## 목차
 1. [구현 기능](#구현-기능)
@@ -39,8 +37,8 @@
 5. [이후의 계획](#이후의-계획)
   <br>
 
-## 주요 기능
-** Python 
+## 구현 기능
+1. 딥러닝 기반의 쓰레기 이미지 분류 모델 구축
 <br>
 
 ## 사용법
