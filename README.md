@@ -29,6 +29,9 @@
 * 결론
 
 ## 데이터 구조
+* 라벨: 12개
+* 
+
 garbage_classification
 
  └ battery
@@ -82,16 +85,13 @@ garbage_classification
 ## 사용법
 **zip 이미지 파일 압축 해제 방법**
 압축 파일의 위치(구글 드라이브 - 내 드라이브 위치)
-
 ```
 drive_path = '/content/drive/MyDrive/Colab Notebooks/project/'
 source_filename = drive_path + 'dataset/archive (5).zip'
 ```
   <br>
 
-
 저장할 경로
-
 ```
 extract_folder = '/content/drive/MyDrive/Colab Notebooks/project/dataset/'
 ```
@@ -102,6 +102,7 @@ extract_folder = '/content/drive/MyDrive/Colab Notebooks/project/dataset/'
 import shutil
 shutil.unpack_archive(source_filename, extract_folder)
 ```
+  <br>
 
 
 * 테스트 방법
