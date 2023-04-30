@@ -29,7 +29,7 @@
 * 결론
 
 ## 데이터 구조
-imagedata
+garbage_classification
 
  └ battery
 
