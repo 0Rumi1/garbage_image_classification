@@ -16,13 +16,11 @@
   <br>
 
 
-### 기술 스택
----
+## 기술 스택
  <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white"> 
   <br>
 
-### 목차
----
+## 목차
 1. [구현 기능](#구현-기능)
 2. [사용법](#사용법)
 3. [결과](#결과)
@@ -30,34 +28,28 @@
 5. [이후의 계획](#이후의-계획)
   <br>
 
-### 구현 기능
----
+## 구현 기능
   <br>
 
-### 사용법
----
+## 사용법
 * 설치방법
 * 테스트 방법
   <br>
 
-### 결과
----
+## 결과
 #### 3-1) 모델 정확도 67.9% 로 아쉬운 결과를 나타냄
 
 ![image](https://user-images.githubusercontent.com/122415320/235335209-b12f9abe-8fc1-45cb-8ba2-e818aefc01c5.png)
 
 #### 3-2) Train/Test 모델 손실 및 정확도 그래프
----
 ![image](https://user-images.githubusercontent.com/122415320/235335200-0b291aec-0bc4-418b-acf3-0d2668fd2c7a.png)
   <br>
 
 
-#### 배운점 & 아쉬운 점
----
+## 배운점 & 아쉬운 점
   <br>
 
-### 이후의 계획
----
+## 이후의 계획
   <br>
 
 
