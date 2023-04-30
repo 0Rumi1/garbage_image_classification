@@ -94,13 +94,13 @@ source_filename = drive_path + 'dataset/archive (5).zip'
 ```
   <br>
 
-저장할 경로
+**저장할 경로**
 ```
 extract_folder = '/content/drive/MyDrive/Colab Notebooks/project/dataset/'
 ```
   <br>
 
-압축 해제
+**압축 해제**
 ```
 import shutil
 shutil.unpack_archive(source_filename, extract_folder)
