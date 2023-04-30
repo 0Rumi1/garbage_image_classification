@@ -207,14 +207,38 @@ num_classes = 11
 ```
 <br>
 
+**Functional API 모델 생성**
+```
+from keras.engine import input_layer
+# Build Model - functional_api
+
+input_layer = tf.keras.Input(shape=(224,224, 3), name = 'InputLayer') # 입력 레이어
+
+x1 = tf.keras.layers.Conv2D(32,(3,3), padding='same',activation='relu')(input_layer) # relu 활성화 함수 
+x2 = tf.keras.layers.MaxPooling2D(pool_size = (2,2))(x1) # maxpooling2D : input 차원을 줄임
+x3 = tf.keras.layers.Conv2D(64,(3,3), padding='same', activation='relu')(x2)
+x4 = tf.keras.layers.MaxPooling2D(pool_size = (2,2))(x3)
+x5 = tf.keras.layers.Conv2D(32,(3,3), padding='same', activation='relu')(x4)
+x6 = tf.keras.layers.MaxPooling2D(pool_size=(2,2))(x5)
+x7 = tf.keras.layers.Flatten(name = 'Flatten')(x6)
+x8 = tf.keras.layers.Dense(64,activation='relu', name = 'Dense1')(x7)
+x9 = tf.keras.layers.Dropout(0.4, name = 'Dropout')(x8)
+x10 = tf.keras.layers.Dense(num_classes,activation='softmax', name = 'OutputLayer')(x9)
+
+
+# Create Model
+fun_model = tf.keras.Model(inputs=input_layer, outputs=x10, name='FunctionalModel')
+```
+<br>
 
 
 ## 결과
-3-1) 모델 정확도 67.9% 로 아쉬운 결과를 나타냄
+3-1) 모델 정확도 67.9%
 
 ![image](https://user-images.githubusercontent.com/122415320/235335209-b12f9abe-8fc1-45cb-8ba2-e818aefc01c5.png)
 
 3-2) Train/Test 모델 손실 및 정확도 그래프
+* 과대적합이나 과소적합이 거의 발생하지 않고 학습이 잘 진행된 것을 확인할 수 있음
 ![image](https://user-images.githubusercontent.com/122415320/235335200-0b291aec-0bc4-418b-acf3-0d2668fd2c7a.png)
   <br>
 
@@ -225,8 +249,22 @@ num_classes = 11
  * 데이터셋 파일을 구글 드라이브에 저장하지 않은 이유는 15,000장의 파일을 구글 드라이브를 통해 읽어오면 저장하는 속도가 매우 느리기 때문이라는 사실을 알게됨
   
  * 따라서, 구글 드라이브의 압축 파일 한 개를 읽어오는 시간은 오래 걸리지 않고, 압축을 풀면서 생성되는 15,000장의 파일을 코랩 환경에 저장하면 파일을 읽는 시간이 훨씬 단축됨
+ 
+ * 함수형 API 사용
+1. Sequential API 를 주로 사용했지만, 다양한 모델 구조를 구현할 수 있기에 공부를 위해 Functional API  사용
+
+* 모델 성능
+1. 오랜 모델 학습 시간 및 오류 장벽으로 모델 성능을 더 높이지 못해 아쉬움이 남음
+2. epoch 을 더 늘리면 모델 성능이 개선될 여지가 남아 있음
+
+<br>
+
 
 ## 이후의 계획
 <br>
+1. 클래스 단순화 => 모델 학습 시간 단축
+2. 모델 성능 개선에 대한 방법 서치
+3. 
+
 
 
