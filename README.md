@@ -27,6 +27,7 @@
   * 전이 학습
 * 모델 성능 확인
 * 결론
+  <br>
 
 ## 데이터 구조
 * 라벨: 12개
@@ -58,6 +59,7 @@ garbage_classification
  └ trash
  
  └ white-glass
+  <br>
 
 ## 기술 스택
 #### Environment
