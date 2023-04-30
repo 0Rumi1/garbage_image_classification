@@ -47,11 +47,11 @@
   <br>
 
 ## 결과
-#### 3-1) 모델 정확도 67.9% 로 아쉬운 결과를 나타냄
+3-1) 모델 정확도 67.9% 로 아쉬운 결과를 나타냄
 
 ![image](https://user-images.githubusercontent.com/122415320/235335209-b12f9abe-8fc1-45cb-8ba2-e818aefc01c5.png)
 
-#### 3-2) Train/Test 모델 손실 및 정확도 그래프
+3-2) Train/Test 모델 손실 및 정확도 그래프
 ![image](https://user-images.githubusercontent.com/122415320/235335200-0b291aec-0bc4-418b-acf3-0d2668fd2c7a.png)
   <br>
 
