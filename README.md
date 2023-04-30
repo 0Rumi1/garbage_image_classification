@@ -59,7 +59,8 @@ garbage_classification
  └ trash
  
  └ white-glass
-  <br>
+
+<br>
 
 ## 기술 스택
 #### Environment
@@ -72,6 +73,7 @@ garbage_classification
   <br>
 
 ---
+  <br>
 
 ## 목차
 1. [구현 기능](#구현-기능)
