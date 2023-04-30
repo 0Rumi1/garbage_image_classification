@@ -3,19 +3,19 @@
 ## 프로젝트 소개
 쓰레기 분리수거 시, 쓰레기의 종류에 따라 어떻게 분류해야할 지 모르는 경우가 종종 발생한다.
 이러한 불편함을 해소하기 위해 **딥러닝을 활용해 쓰레기 분리수거 모델 개발** 하는 프로젝트를 기획하게 됨
- <br>
+<br>
 
 * 멤버: 본인(1명)
 * 역할: 전체 기획 및 이미지 딥러닝 모델 구축
 * 개발 기간: 23.03.26-27
- <br>
+<br>
 
 **개발 방향 및 목표는 아래와 같다.**
 1. 이미지 분류로 쓰레기 분리수거 딥러닝 모델 구축 및 개발
 2. 분류 모델 성능: 90% 이상
 3. 쓰레기 분리수거 이미지 업로드 시, 분리수거 라벨 메시지 출력 -> 시간상 관계로 개발하지 못함
 4. 추후, 휴대폰 카메라로 쓰레기를 촬영하여 이미지 판별 후 분리수거 카테고리를 안내하는 메세지를 출력하는 서비스 개발
- <br>
+<br>
 
 ## 작업 순서
 * 데이터 불러오기
@@ -73,7 +73,7 @@ garbage_classification
   <br>
 
 ---
-  <br>
+<br>
 
 ## 목차
 1. [구현 기능](#구현-기능)
@@ -81,33 +81,33 @@ garbage_classification
 3. [결과](#결과)
 4. [배운점 & 아쉬운 점](#배운점-&-아쉬운-점)
 5. [이후의 계획](#이후의-계획)
-  <br>
+<br>
 
 ## 구현 기능
 1. 딥러닝 기반의 쓰레기 이미지 분류 모델 구축
 <br>
 
 ## 사용법
-**zip 이미지 파일 압축 해제 방법**
+**이미지 zip 파일 압축 해제**
 압축 파일의 위치(구글 드라이브 - 내 드라이브 위치)
 ```
 drive_path = '/content/drive/MyDrive/Colab Notebooks/project/'
 source_filename = drive_path + 'dataset/archive (5).zip'
 ```
-  <br>
+<br>
 
 **저장할 경로**
 ```
 extract_folder = '/content/drive/MyDrive/Colab Notebooks/project/dataset/'
 ```
-  <br>
+<br>
 
 **압축 해제**
 ```
 import shutil
 shutil.unpack_archive(source_filename, extract_folder)
 ```
-  <br>
+<br>
 
 ```
 import os
@@ -134,11 +134,7 @@ plot_imags(data_path + '/battery')
 plot_imags(data_path + '/biological')
 plot_imags(data_path + '/brown-glass')
 ```
-
-
-
-* 테스트 방법
-  <br>
+<br>
 
 ## 결과
 3-1) 모델 정확도 67.9% 로 아쉬운 결과를 나타냄
@@ -151,13 +147,13 @@ plot_imags(data_path + '/brown-glass')
 
 
 ## 배운점 & 아쉬운 점
-  <br>
+<br>
   
  * 데이터셋 파일을 구글 드라이브에 저장하지 않은 이유는 15,000장의 파일을 구글 드라이브를 통해 읽어오면 저장하는 속도가 매우 느리기 때문이라는 사실을 알게됨
   
  * 따라서, 구글 드라이브의 압축 파일 한 개를 읽어오는 시간은 오래 걸리지 않고, 압축을 풀면서 생성되는 15,000장의 파일을 코랩 환경에 저장하면 파일을 읽는 시간이 훨씬 단축됨
 
 ## 이후의 계획
-  <br>
+<br>
 
 
