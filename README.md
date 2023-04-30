@@ -42,7 +42,7 @@ battery, biological, brown-glass, cardboard, clothes, green-glass, metal, paper,
 
 ## 기술 스택
 #### Environment
-<img src="https://img.shields.io/badge/visualstudiocode-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white"/>
+<img src="https://img.shields.io/badge/Google Colab-F9AB00?style=for-the-badge&logo=Google Colab&logoColor=white"/>
 <img src="https://img.shields.io/badge/windows-0078D6?style=for-the-badge&logo=windows&logoColor=white"/>
 
 
