@@ -90,7 +90,7 @@ garbage_classification
 ## 사용법
 **이미지 zip 파일 압축 해제**
 압축 파일의 위치(구글 드라이브 - 내 드라이브 위치)
-```
+``` python
 drive_path = '/content/drive/MyDrive/Colab Notebooks/project/'
 source_filename = drive_path + 'dataset/archive (5).zip'
 ```
@@ -109,6 +109,7 @@ shutil.unpack_archive(source_filename, extract_folder)
 ```
 <br>
 
+**이미지 확인**
 ```
 import os
 import matplotlib.pyplot as plt
