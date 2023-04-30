@@ -11,4 +11,7 @@
 3. 결과
 모델 정확도 67.9% 로 아쉬운 결과를 나타냄
 
+![image](https://user-images.githubusercontent.com/122415320/235335209-b12f9abe-8fc1-45cb-8ba2-e818aefc01c5.png)
+
+
 ![image](https://user-images.githubusercontent.com/122415320/235335200-0b291aec-0bc4-418b-acf3-0d2668fd2c7a.png)
