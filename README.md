@@ -95,7 +95,9 @@ drive.mount("/content/drive") #
 <br>
 
 **이미지 zip 파일 압축 해제**
-압축 파일의 위치(구글 드라이브 - 내 드라이브 위치)
+압축 파일의 위치(구글 드라이브 - 내 드라이브 위치)   
+데이터셋 파일을 구글 드라이브에 저장하지 않음, 15,000장의 파일을 구글 드라이브를 통해 읽어오면 저장하는 속도가 매우 느림
+따라서, 구글 드라이브의 압축 파일 한 개를 읽어오는 시간은 오래 걸리지 않고 압축을 풀면서 생성되는 15,000장의 파일을 **코랩 환경에 저장하면 파일을 읽는 시간이 훨씬 단축됨**
 ``` 
 drive_path = '/content/drive/MyDrive/Colab Notebooks/project/'
 source_filename = drive_path + 'dataset/archive (5).zip'
